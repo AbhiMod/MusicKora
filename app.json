@@ -70,7 +70,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TeamKora/KoraMusicBot",
+        "value": "https://github.com/AbhiMod/MusicKora",
         "required": true
       },
       "UPSTREAM_BRANCH": {
@@ -93,7 +93,7 @@
       "formation": {
           "worker": {
               "quantity": 1,
-              "size": "free"
+              "size": "basic"
           }
       }
   }
