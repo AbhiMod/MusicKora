@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamKora@Github, < https://github.com/TeamKora >.
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/TeamKora/KoraMusicBot > project,
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamKora/KoraMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -25,7 +25,7 @@ from KoraMusic.utils.exceptions import AssistantErr
 from KoraMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from KoraMusic.utils.inline.playlist import close_markup
-from KoraMusic.utils.pastebin import Korabin
+from KoraMusic.utils.pastebin import Yukkibin
 from KoraMusic.utils.stream.queue import put_queue, put_queue_index
 from KoraMusic.utils.thumbnails import gen_thumb
 
@@ -129,7 +129,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Korabin(msg)
+            link = await Yukkibin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -179,7 +179,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Yukki.join_call(
+            await Kora.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -287,7 +287,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Yukki.join_call(
+            await Kora.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
