@@ -35,12 +35,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_1"],
-                url=f"https://t.me/{OWNER_USERNAME}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
@@ -49,11 +43,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
         ],
-         [
-                    InlineKeyboardButton(
-                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}",
-                    ),
-                ]
+                [
+        InlineKeyboardButton(text=_["S_B_7"], url=f"t.me/{OWNER_USERNAME}"),
+         InlineKeyboardButton(
+                    text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                ),
+        ],
         [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
