@@ -142,7 +142,7 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "🔄 Processing Query... Please Wait!"
+play_1 : "🔍"
 play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
 play_3 : "Failed to Process Query!"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
@@ -248,12 +248,12 @@ L_B_1 : "🚀 Checkout Lyrics Now"
 # Start
 S_B_1 : "🗒 Commands"
 S_B_2 : "🔧 Settings"
-S_B_3 : "📨 Support"
-S_B_4 : "📨 Channel"
-S_B_5 : "✚ Add me to your Group"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 How to Use? Commands Menu."
+S_B_3 : "💌 ᴄʜᴀᴛ ɢʀᴏᴜᴘ"
+S_B_4 : "🔫 ɢʙᴀɴꜱ ʟᴏɢꜱ"
+S_B_5 : "✚ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ"
+S_B_6 : "🛡 Gbans"
+S_B_7 : "💕 ʙᴏᴛ ᴏᴡɴᴇʀ"
+S_B_8 : "🔎 ʜᴏᴡ ᴛᴏ ᴜꜱᴇ? ᴄᴏᴍᴍᴀɴᴅꜱ ᴍᴇɴᴜ."
 
 #Help 
 H_B_1 : "Admin Commands"
