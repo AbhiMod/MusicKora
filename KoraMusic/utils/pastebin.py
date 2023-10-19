@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamKora@Github, < https://github.com/TeamKora >.
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/TeamKora/KoraMusicBot > project,
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamKora/KoraMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -22,7 +22,7 @@ async def post(url: str, *args, **kwargs):
         return data
 
 
-async def Korabin(text):
+async def Yukkibin(text):
     resp = await post(f"{BASE}api/v2/paste", data=text)
     if not resp["success"]:
         return
