@@ -20,7 +20,7 @@ from config import BANNED_USERS
 from strings import get_command
 from KoraMusic import app
 from KoraMusic.misc import db
-from KoraMusic.utils import (Korabin, get_channeplayCB,
+from KoraMusic.utils import (Yukkibin, get_channeplayCB,
                               seconds_to_min)
 from KoraMusic.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
