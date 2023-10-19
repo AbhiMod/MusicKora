@@ -179,7 +179,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Kora.join_call(
+            await Yukki.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -287,7 +287,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Kora.join_call(
+            await Yukki.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
