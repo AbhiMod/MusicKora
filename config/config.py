@@ -205,7 +205,8 @@ SOUNCLOUD_IMG_URL = getenv(
 )
 
 YOUTUBE_IMG_URL = getenv(
-    "YOUTUBE_IMG_URL",None
+    "YOUTUBE_IMG_URL",
+    "assets/Youtube.jpeg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
