@@ -30,7 +30,7 @@ from KoraMusic.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
 from KoraMusic.utils.decorators.language import language
-from KoraMusic.utils.pastebin import Korabin
+from KoraMusic.utils.pastebin import Yukkibin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -56,7 +56,7 @@ async def log_(client, message, _):
             if HAPP is None:
                 return await message.reply_text(_["heroku_1"])
             data = HAPP.get_log()
-            link = await Korabin(data)
+            link = await Yukkibin(data)
             return await message.reply_text(link)
         else:
             if os.path.exists(config.LOG_FILE_NAME):
@@ -69,7 +69,7 @@ async def log_(client, message, _):
                     NUMB = 100
                 for x in lines[-NUMB:]:
                     data += x
-                link = await Korabin(data)
+                link = await Yukkibin(data)
                 return await message.reply_text(link)
             else:
                 return await message.reply_text(_["heroku_2"])
@@ -265,7 +265,7 @@ async def update_(client, message, _):
     _update_response_ = "<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
-        url = await Korabin(updates)
+        url = await Yukkibin(updates)
         nrs = await response.edit(
             f"<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n[Click Here to checkout Updates]({url})"
         )
